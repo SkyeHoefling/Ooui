@@ -27,7 +27,10 @@ namespace Ooui.Forms.Renderers
 
             if (e.NewElement != null) {
                 if (Control == null) {
-                    SetNativeControl (new Ooui.Button ());
+                    SetNativeControl (new Ooui.Button
+                    {
+                        ClassName = "btn btn-primary"
+                    });
 
                     Debug.Assert (Control != null, "Control != null");
 
